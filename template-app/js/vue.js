@@ -4,6 +4,5 @@
 		el: '#app',
 		data: {
 			message: 'Hello Vue!',
-			// cards: tarjetas
 		}
 	})
