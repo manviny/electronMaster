@@ -5,6 +5,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/photon.min.css">
+    <link rel="stylesheet" href="../node_modules/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="../node_modules/vue-material/dist/theme/default.css">
 
     <!-- Javascript -->
     <script src="js/menu.js" charset="utf-8"></script>
@@ -21,7 +23,7 @@
           </div>
 
           <div class="pane">
-            {{message}}
+            <md-button class="md-raised md-accent">{{message}}</md-button>
           </div>
 
 
@@ -29,6 +31,7 @@
       </div>
     </div>
     <script src="../node_modules/vue/dist/vue.min.js"></script>
+    <script src="../node_modules/vue-material/dist/vue-material.min.js"></script>
     <script src="js/vue.js" charset="utf-8"></script>    
   </body>
 </html>

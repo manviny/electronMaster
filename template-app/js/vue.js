@@ -1,4 +1,4 @@
-
+Vue.use(VueMaterial.default)
 
 	var app = new Vue({
 		el: '#app',
