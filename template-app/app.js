@@ -1,5 +1,6 @@
 var app = require('app');  // Module to control application life.
 var BrowserWindow = require('browser-window');  // Module to create native browser window.
+var fs = require('fs');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -21,10 +22,20 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 600,
     height: 300,
+    fullscreen: true,
     'min-width': 500,
     'min-height': 200,
     'accept-first-mouse': true,
     'title-bar-style': 'hidden'
+  });
+
+
+
+  fs.readFile('./package.json', 'utf8', function (err,data) {
+    if (err) {
+      return console.log("kakita",err);
+    }
+    console.log(data);
   });
 
   // and load the index.html of the app.
